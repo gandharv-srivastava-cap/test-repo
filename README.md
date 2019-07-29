@@ -14,6 +14,8 @@ DBMDATA
 - For release it will get shifted to release folder
 
 VAGRANT
+- READ: https://www.vagrantup.com/intro/getting-started/
+- FOLLOW: 
 - https://docs.google.com/document/d/1cSObaRonpqOX9gv8vCyaIFGqzG-DoD9fEMJTIPkGyr4/edit?ts=5d385613
 - copy your local machine's public key to
 - Example of Vagrantfile
@@ -32,6 +34,8 @@ config.vm.define "devint" do |devint|
   end
 end
 ------------------------------------------------------------------------------------
+- vagrant 
+- http://192.168.33.102:8001/phpmyadmin/index.php?server=1&target=main.php&token=940fcc0940beed5a67a345b44bad847a
 
 THRIFT
 - https://blockdev.io/thrift-0-9-3-on-mac-os/
