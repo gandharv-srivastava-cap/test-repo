@@ -19,22 +19,9 @@ VAGRANT
 - https://docs.google.com/document/d/1cSObaRonpqOX9gv8vCyaIFGqzG-DoD9fEMJTIPkGyr4/edit?ts=5d385613
 - copy your local machine's public key to
 - Example of Vagrantfile
-------------------------------------------------------------------------------------
-Vagrant.configure("2") do |config|
-config.vm.box = "devint-box-new"
-config.vm.box_url = "/Users/gandharv.s/Vagrant/vagrant_package.box"
-config.vm.network :private_network, ip: "192.168.33.102"
-config.ssh.private_key_path="/Users/gandharv.s/.ssh/id_rsa"
-config.vm.synced_folder "/Users/gandharv.s/cap_utils", "/home/vagrant/synced_folder"
-      config.vm.provider "virtualbox" do |v|
-              v.customize ["modifyvm", :id, "--cpus", 2]
-              v.customize ["modifyvm", :id, "--memory", "5000"]
-      end
-config.vm.define "devint" do |devint|
-  end
-end
-------------------------------------------------------------------------------------
-- vagrant 
+- vagrant up 
+- vagrant ssh
+- vagrant halt
 - http://192.168.33.102:8001/phpmyadmin/index.php?server=1&target=main.php&token=940fcc0940beed5a67a345b44bad847a
 
 THRIFT
