@@ -18,7 +18,7 @@ VAGRANT
 - FOLLOW: 
 - https://docs.google.com/document/d/1cSObaRonpqOX9gv8vCyaIFGqzG-DoD9fEMJTIPkGyr4/edit?ts=5d385613
 - copy your local machine's public key to
-- Example of Vagrantfile
+- Example of Vagrantfile : in the repo
 - vagrant up 
 - vagrant ssh
 - vagrant halt
