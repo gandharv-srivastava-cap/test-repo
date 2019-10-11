@@ -31,3 +31,9 @@ THRIFT
 - rm thrift.rb
 - copy thrift.rb from the repo in that folder
 - brew install thrift
+
+AWSCLI
+- use 
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+- then use 
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
