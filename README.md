@@ -39,7 +39,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
 AWK 
-echo '95 percentile : '
+- echo '95 percentile : '
 grep 'in.capillary.nsadmin.gateway.unicell.UnicellGatewayImpl:232 DEBUG - Http call duration' < comm-engine.log.2019-11-09-07 | awk '{print $21}' | sort -n | awk 'BEGIN{i=1} {s[i]=$1; i++;} END{print s[int(NR*0.95)]}'
-echo 'average : '
+- echo 'average : '
 grep 'in.capillary.nsadmin.gateway.unicell.UnicellGatewayImpl:232 DEBUG - Http call duration' < comm-engine.log.2019-11-09-07 | awk '{sum+=$21} END {print sum / NR}'
