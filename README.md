@@ -43,3 +43,12 @@ AWK
 grep 'in.capillary.nsadmin.gateway.unicell.UnicellGatewayImpl:232 DEBUG - Http call duration' < comm-engine.log.2019-11-09-07 | awk '{print $21}' | sort -n | awk 'BEGIN{i=1} {s[i]=$1; i++;} END{print s[int(NR*0.95)]}'
 - echo 'average : '
 grep 'in.capillary.nsadmin.gateway.unicell.UnicellGatewayImpl:232 DEBUG - Http call duration' < comm-engine.log.2019-11-09-07 | awk '{sum+=$21} END {print sum / NR}'
+
+.hprof
+- jhat -port 7401 -J-Xmx4G dump.hprof
+- http://localhost:7401/
+
+REDIS commands through telnet
+- select db_number
+- keys *PATTERN*  ("start"pattern"star")
+- DEL key_entry
