@@ -1,12 +1,27 @@
 # test-repo
 
+JAVA 1.8 
+
+remove java 12 by : 
+java -version
+sudo rm -rf /Library/Java/*
+sudo rm -rf /Library/PreferencePanes/Java*
+sudo rm -rf /Library/Internet\ Plug-Ins/Java*
+
+then install java 1.8 using 
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk8
+
+check java version using : 
+/usr/libexec/java_home -V
+
 RABBITMQ
 - run the files in the folder
 - https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html
 
 MAVEN
-- install maven 3.5.4 not 3.6
-- use mvnvm
+brew install maven
+brew install mvnvm
 
 DBMDATA
 - Put all the new code in a new file in queues folder
