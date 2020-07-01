@@ -3,25 +3,26 @@
 JAVA 1.8 
 
 remove java 12 by : 
-java -version
-sudo rm -rf /Library/Java/*
-sudo rm -rf /Library/PreferencePanes/Java*
-sudo rm -rf /Library/Internet\ Plug-Ins/Java*
+`java -version`
+`sudo rm -rf /Library/Java/*`
+`sudo rm -rf /Library/PreferencePanes/Java*`
+`sudo rm -rf /Library/Internet\ Plug-Ins/Java*`
 
 then install java 1.8 using 
-brew tap adoptopenjdk/openjdk
-brew cask install adoptopenjdk8
+`brew tap adoptopenjdk/openjdk`
+`brew cask install adoptopenjdk8`
 
 check java version using : 
-/usr/libexec/java_home -V
+
+`/usr/libexec/java_home -V`
 
 RABBITMQ
 - run the files in the folder
 - https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html
 
 MAVEN
-brew install maven
-brew install mvnvm
+`brew install maven`
+`brew install mvnvm`
 
 DBMDATA
 - Put all the new code in a new file in queues folder
@@ -32,8 +33,7 @@ VAGRANT
 - READ: https://www.vagrantup.com/intro/getting-started/
 - FOLLOW: 
 - https://docs.google.com/document/d/1cSObaRonpqOX9gv8vCyaIFGqzG-DoD9fEMJTIPkGyr4/edit?ts=5d385613
-- copy your local machine's public key to
-- Example of Vagrantfile : in the repo
+- copy your local machine's public key to `~/.ssh/authorized_keys` inside vagrant 
 - vagrant up 
 - vagrant ssh
 - vagrant halt
