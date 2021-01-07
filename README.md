@@ -68,7 +68,7 @@ REDIS commands through telnet
 - keys *PATTERN*  ("start"pattern"star")
 - DEL key_entry
 
-To run Iris Locally:
+How to create mongo admin user:
  - In Vagrant, open Mongo shell
  - Run this command:
    `db.getSiblingDB("admin").runCommand({
