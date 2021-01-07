@@ -67,3 +67,13 @@ REDIS commands through telnet
 - select db_number
 - keys *PATTERN*  ("start"pattern"star")
 - DEL key_entry
+
+How to create mongo admin user:
+ - In Vagrant, open Mongo shell
+ - Run this command:
+   `db.getSiblingDB("admin").runCommand({
+	`createUser: "capillary",
+   `    pwd: "123",
+    `   roles: [
+   `             { role: "readWrite", db: "campaigns" }]})
+  -Expected Response is -> {"ok": 1}
